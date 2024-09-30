@@ -1,6 +1,8 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=16106805&assignment_repo_type=AssignmentRepo)
 # ppz_empty_with_gitignore
 
+*-nazwy do ustalenia
+
 Arcade 69
 1. Tytuł projektu
 "Arcade 69"
@@ -20,8 +22,8 @@ Gracz może wybierać między różnymi automatami:
 Kasjer sprzedający upgrade'y:
 
 Saper: Klasyczna gra logiczna, w której należy odkrywać pola bez wybuchania bomb.
-Wyścigi: Wyścigi samochodowe z prostą mechaniką, w których gracz rywalizuje z SI
-Gra Pawła: Unikalna mini-gra stworzona przez Pawła, która wprowadza nowe mechaniki i wyzwania.
+Wyścigi*: Wyścigi samochodowe z prostą mechaniką, w których gracz rywalizuje z SI
+Gra Pawła*: Unikalna mini-gra stworzona przez Pawła, która wprowadza nowe mechaniki i wyzwania.
 
 
 Personalizacja postaci:
@@ -38,7 +40,7 @@ GDScript – język skryptowy dla Godot.
 Etap 1: Mechanika podstawowa
 
 Jerzy Szymczuk: Implementacja poruszania się postaci po salonie oraz sam budynek.
-Igor Olejniczak: Implementacja automatów oraz logiki gier.
+Igor Olejniczak: Implementacja automatów oraz kasjera*
 Paweł Pawlikowski: Pomoc przy tworzeniu interfejsu użytkownika (menu i HUD)
 Etap 2: Mini-gry
 
@@ -46,9 +48,15 @@ Jerzy Szymczuk: Stworzenie mechaniki dla mini-gry wyścigowej,
 Igor Olejniczak: Stworzenie mechaniki dla mini-gry Saper,
 Paweł Pawlikowski: Stworzenie unikalnejmechaniki dla mini-gry.
 
-Etap 3: System 
+Etap 3: System punktowy
 
-Etap 4: Testowanie i balansowanie gry
+Każdy do swojej gry implementuje system punktowy, który potem będzie mógł być przekazywany na wyniki na ścianie. Zapis lokalny.
+
+Etap 4: Polishing
+
+Jerzy: Finalna wersja szaty graficznej.
+Igor: Dokończenie HUD/Finalizacja kasjera/dodanie upgradów
+Paweł: Dokończenie HUD/Finalizacja kasjera/dodanie upgradów
 
 
 
