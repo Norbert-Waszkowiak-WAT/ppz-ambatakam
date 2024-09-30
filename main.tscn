@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://tf5r2jdvu4o0"]
+
+[ext_resource type="Script" path="res://movement.gd" id="1_xj3nc"]
+[ext_resource type="Texture2D" uid="uid://cy1tdqjhy3f8j" path="res://assety/ph.png" id="2_om608"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_svy88"]
+load_path = "res://.godot/imported/Bez tytułu.png-fd48313d1d0e92c97f352a00ddd6639d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3phx0"]
+load_path = "res://.godot/imported/podlga.png-da8c91f053ba45e7f1705db2715f8e98.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e317s"]
+size = Vector2(1166, 13.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bk5hj"]
+size = Vector2(13.5, 697)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vd1p5"]
+size = Vector2(144, 20)
+
+[node name="Scena" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1156.0
+offset_bottom = 649.0
+texture = SubResource("CompressedTexture2D_svy88")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(571, 580)
+scale = Vector2(1.01304, 0.502857)
+texture = SubResource("CompressedTexture2D_3phx0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(573, 652)
+shape = SubResource("RectangleShape2D_e317s")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(575, 486)
+shape = SubResource("RectangleShape2D_e317s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1163.5, 332)
+shape = SubResource("RectangleShape2D_bk5hj")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-6.25, 344.5)
+shape = SubResource("RectangleShape2D_bk5hj")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_xj3nc")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(261, 508)
+scale = Vector2(0.174031, 0.177462)
+texture = ExtResource("2_om608")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(261, 574)
+shape = SubResource("RectangleShape2D_vd1p5")
