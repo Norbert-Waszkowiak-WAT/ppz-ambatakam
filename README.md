@@ -8,6 +8,7 @@
 Zabawna gra komputerowa typu **tower defense**, w której gracze wykorzystują postacie anime (waifu) do obrony przed falami nazistów. Gra bazuje na mechanice znanej z **Plants vs Zombies**.
 
 ### 2. Skład zespołu
+
 - **Jerzy Szymczuk**  
 - **Igor Olejniczak**  
 - **Paweł Pawlikowski**
