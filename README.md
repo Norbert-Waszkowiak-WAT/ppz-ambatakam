@@ -20,8 +20,6 @@ Gracz może wybierać między różnymi automatami:
 Saper: Klasyczna gra logiczna, w której należy odkrywać pola bez wybuchania bomb.
 Wyścigi: Wyścigi samochodowe z prostą mechaniką, w których gracz rywalizuje z innymi uczestnikami.
 Gra Pawła: Unikalna mini-gra stworzona przez Pawła, która wprowadza nowe mechaniki i wyzwania.
-System punktacji:
-Gracze zdobywają punkty w każdej z gier, co umożliwia porównywanie wyników.
 
 Ranking:
 Gra oferuje system rankingowy, w którym gracze mogą zobaczyć swoje osiągnięcia i rywalizować o najwyższe miejsca.
