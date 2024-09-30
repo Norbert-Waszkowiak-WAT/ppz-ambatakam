@@ -43,21 +43,16 @@ Etap 2: Mini-gry
 
 Jerzy Szymczuk: Stworzenie mechaniki dla mini-gry Saper.
 Igor Olejniczak: Stworzenie mechaniki dla mini-gry Wyścigi.
-Paweł Pawlikowski: Stworzenie unikalnej mini-gry oraz implementacja zasobów.
+Paweł Pawlikowski: Stworzenie unikalnejmechaniki dla mini-gry.
 Etap 3: Ulepszenia i rozwój postaci
 
-Jerzy Szymczuk: Dodanie systemu punktacji oraz poziomów dla mini-gier.
-Igor Olejniczak: Implementacja elementów personalizacji postaci.
-Paweł Pawlikowski: Rozwój systemu osiągnięć i rankingów.
 Etap 4: Testowanie i balansowanie gry
 
 Jerzy Szymczuk: Testowanie trudności gier oraz balansowanie mechaniki.
 Igor Olejniczak: Optymalizacja rozgrywki i testowanie mini-gier.
 Paweł Pawlikowski: Testowanie poprawności działania gry i naprawa błędów.
+
 7. Kryteria sukcesu
 Stabilna rozgrywka z odpowiednim poziomem trudności.
 Różnorodne mini-gry, które angażują graczy.
 Działający system punktacji i rankingów.
-8. Ryzyka
-Problemy z balansem gier (regularne testowanie pomoże w wykryciu problemów).
-Wyzwania związane z implementacją mechanik gier, które będą wymagały współpracy zespołowej.
