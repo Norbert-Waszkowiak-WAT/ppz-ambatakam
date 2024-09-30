@@ -6,7 +6,7 @@
 ### 1. Tytuł projektu
 **"Waifus vs Nazis – Gra Komputerowa"**  
 Zabawna gra komputerowa typu **tower defense**, w której gracze wykorzystują postacie anime (waifu) do obrony przed falami nazistów. Gra bazuje na mechanice znanej z **Plants vs Zombies**.
-
+skibidi
 ### 2. Skład zespołu
 - **Jerzy Szymczuk**  
 - **Igor Olejniczak**  
