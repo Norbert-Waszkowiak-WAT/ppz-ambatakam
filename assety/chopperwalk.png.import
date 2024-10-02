@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy1tdqjhy3f8j"
-path="res://.godot/imported/ph.png-b1cbd4db0c83cb9eedeaec4a8bc84530.ctex"
+uid="uid://dw52uk10ioqc3"
+path="res://.godot/imported/chopperwalk.png-52e3f5187ef77ea0616a345a5f4b0be0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assety/ph.png"
-dest_files=["res://.godot/imported/ph.png-b1cbd4db0c83cb9eedeaec4a8bc84530.ctex"]
+source_file="res://assety/chopperwalk.png"
+dest_files=["res://.godot/imported/chopperwalk.png-52e3f5187ef77ea0616a345a5f4b0be0.ctex"]
 
 [params]
 
