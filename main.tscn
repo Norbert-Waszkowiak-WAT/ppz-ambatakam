@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://tf5r2jdvu4o0"]
+[gd_scene load_steps=20 format=3 uid="uid://tf5r2jdvu4o0"]
 
 [ext_resource type="Texture2D" uid="uid://cv2qdbj75wd3c" path="res://assety/tlo.png" id="1_01eid"]
+[ext_resource type="Script" path="res://auto.gd" id="1_erjng"]
 [ext_resource type="Texture2D" uid="uid://bkb7tkw2ggimh" path="res://assety/podlga.png" id="2_kkisq"]
 [ext_resource type="Script" path="res://character_body_2d.gd" id="3_qvmjy"]
 [ext_resource type="Texture2D" uid="uid://dw52uk10ioqc3" path="res://assety/chopperwalk.png" id="4_7cwfd"]
@@ -86,13 +87,23 @@ size = Vector2(121.125, 21)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j1bw4"]
 size = Vector2(108, 274)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jy481"]
+size = Vector2(106.5, 272)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8l6m"]
 size = Vector2(120.25, 273)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yepc4"]
+size = Vector2(119.5, 272)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d32va"]
 size = Vector2(111, 273)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0v03"]
+size = Vector2(113.5, 272)
+
 [node name="Scena" type="Node2D"]
+script = ExtResource("1_erjng")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1164.0
@@ -152,6 +163,12 @@ position = Vector2(800, 403)
 shape = SubResource("RectangleShape2D_j1bw4")
 one_way_collision_margin = 1.2
 
+[node name="Area2D" type="Area2D" parent="Automat1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Automat1/Area2D"]
+position = Vector2(798.75, 403)
+shape = SubResource("RectangleShape2D_jy481")
+
 [node name="Automat2" type="StaticBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Automat2"]
@@ -163,6 +180,12 @@ texture = ExtResource("5_kom8i")
 position = Vector2(913.875, 402.5)
 shape = SubResource("RectangleShape2D_t8l6m")
 
+[node name="Area2D" type="Area2D" parent="Automat2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Automat2/Area2D"]
+position = Vector2(914.25, 403)
+shape = SubResource("RectangleShape2D_yepc4")
+
 [node name="Automat3" type="StaticBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Automat3"]
@@ -173,3 +196,16 @@ texture = ExtResource("5_kom8i")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Automat3"]
 position = Vector2(1029.5, 402.5)
 shape = SubResource("RectangleShape2D_d32va")
+
+[node name="Area2D" type="Area2D" parent="Automat3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Automat3/Area2D"]
+position = Vector2(1029.25, 404)
+shape = SubResource("RectangleShape2D_x0v03")
+
+[connection signal="body_entered" from="Automat1/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Automat1/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Automat2/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Automat2/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Automat3/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Automat3/Area2D" to="." method="_on_area_2d_body_exited"]
