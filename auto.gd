@@ -16,11 +16,11 @@ func _process(delta):
 func load_minigame():
 	match current_machine.name:
 		"Automat1":
-			get_tree().change_scene("res://Minigame1.tscn")
+			get_tree().change_scene_to_file("res://Minigame1.tscn")
 		"Automat2":
-			get_tree().change_scene("res://Minigame2.tscn")
+			get_tree().change_scene_to_file("res://Minigame2.tscn")
 		"Automat3":
-			get_tree().change_scene("res://Minigame3.tscn")
+			get_tree().change_scene_to_file("res://Minigame3.tscn")
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
