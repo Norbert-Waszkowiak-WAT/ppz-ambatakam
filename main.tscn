@@ -82,25 +82,25 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1igwr"]
-size = Vector2(121.125, 21)
+size = Vector2(121.125, 143.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j1bw4"]
-size = Vector2(108, 274)
+size = Vector2(108, 230)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jy481"]
-size = Vector2(106.5, 272)
+size = Vector2(106.5, 230)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8l6m"]
-size = Vector2(120.25, 273)
+size = Vector2(120.25, 234)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yepc4"]
-size = Vector2(119.5, 272)
+size = Vector2(119.5, 233)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d32va"]
-size = Vector2(111, 273)
+size = Vector2(111, 234)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0v03"]
-size = Vector2(113.5, 272)
+size = Vector2(113.5, 235)
 
 [node name="Scena" type="Node2D"]
 script = ExtResource("1_erjng")
@@ -148,7 +148,7 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(587.438, 563)
+position = Vector2(587.438, 501.75)
 shape = SubResource("RectangleShape2D_1igwr")
 
 [node name="Automat1" type="StaticBody2D" parent="."]
@@ -159,14 +159,14 @@ scale = Vector2(0.1, 0.111506)
 texture = ExtResource("5_kom8i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Automat1"]
-position = Vector2(800, 403)
+position = Vector2(800, 381)
 shape = SubResource("RectangleShape2D_j1bw4")
 one_way_collision_margin = 1.2
 
 [node name="Area2D" type="Area2D" parent="Automat1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Automat1/Area2D"]
-position = Vector2(798.75, 403)
+position = Vector2(798.75, 382)
 shape = SubResource("RectangleShape2D_jy481")
 
 [node name="Automat2" type="StaticBody2D" parent="."]
@@ -177,13 +177,13 @@ scale = Vector2(0.1, 0.110617)
 texture = ExtResource("5_kom8i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Automat2"]
-position = Vector2(913.875, 402.5)
+position = Vector2(913.875, 383)
 shape = SubResource("RectangleShape2D_t8l6m")
 
 [node name="Area2D" type="Area2D" parent="Automat2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Automat2/Area2D"]
-position = Vector2(914.25, 403)
+position = Vector2(914.25, 383.5)
 shape = SubResource("RectangleShape2D_yepc4")
 
 [node name="Automat3" type="StaticBody2D" parent="."]
@@ -194,13 +194,13 @@ scale = Vector2(0.1, 0.107508)
 texture = ExtResource("5_kom8i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Automat3"]
-position = Vector2(1029.5, 402.5)
+position = Vector2(1029.5, 383)
 shape = SubResource("RectangleShape2D_d32va")
 
 [node name="Area2D" type="Area2D" parent="Automat3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Automat3/Area2D"]
-position = Vector2(1029.25, 404)
+position = Vector2(1029.25, 385.5)
 shape = SubResource("RectangleShape2D_x0v03")
 
 [connection signal="body_entered" from="Automat1/Area2D" to="." method="_on_area_2d_body_entered"]
