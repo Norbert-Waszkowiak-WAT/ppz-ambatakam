@@ -4,19 +4,19 @@
 *-nazwy do ustalenia
 
 Arcade 69
-1. Tytuł projektu
+## 1. Tytuł projektu
 "Arcade 69"
 Gra wrzuca cię do okolicznego salonu gier. Celem jest zdobycie jak największej ilości punktów grając w dostępne gry w stylu retro.
 
-2. Skład zespołu
-Jerzy Szymczuk
-Igor Olejniczak
-Paweł Pawlikowski
+## 2. Skład zespołu
+ - Jerzy Szymczuk
+ - Igor Olejniczak
+ - Paweł Pawlikowski
 
-3. Cel projektu
+## 3. Cel projektu
 Celem jest stworzenie gry komputerowej, w której gracz porusza się po salonie gier, korzysta z różnych automatów do gier i zdobywa punkty. Gra ma być prosta w mechanice, ale wciągająca z zabawną oprawą wizualną.
 
-4. Główne funkcje
+## 4. Główne funkcje
 Trzy automaty gier:
 Gracz może wybierać między różnymi automatami:
 Kasjer sprzedający upgrade'y:
@@ -32,35 +32,37 @@ Możliwość dostosowywania wyglądu postaci gracza oraz zbierania różnych akc
 Zadania i wyzwania:
 Dodatkowe zadania do wykonania, które pozwalają na zdobycie bonusowych punktów.
 
-5. Technologie
+## 5. Technologie
 Godot Engine – silnik gry.
 GDScript – język skryptowy dla Godot.
 
-6. Harmonogram prac
-Etap 1: Mechanika podstawowa
+## 6. Harmonogram prac
+# Etap 1: Mechanika podstawowa
 
-Jerzy Szymczuk: Implementacja poruszania się postaci po salonie oraz sam budynek.
-Igor Olejniczak: Implementacja automatów oraz kasjera*
-Paweł Pawlikowski: Pomoc przy tworzeniu interfejsu użytkownika (menu i HUD)
-Etap 2: Mini-gry
+ - Jerzy Szymczuk: Implementacja poruszania się postaci po salonie oraz sam budynek.
+ - Igor Olejniczak: Implementacja automatów
+ - Paweł Pawlikowski: Pomoc przy tworzeniu interfejsu użytkownika (menu i HUD)
+# Etap 2: Mini-gry
 
-Jerzy Szymczuk: Stworzenie mechaniki dla mini-gry wyścigowej,
-Igor Olejniczak: Stworzenie mechaniki dla mini-gry Saper,
-Paweł Pawlikowski: Stworzenie unikalnejmechaniki dla mini-gry.
+ - Jerzy Szymczuk: Stworzenie mechaniki dla mini-gry wyścigowej,
+ - Igor Olejniczak: Stworzenie mechaniki dla mini-gry Saper,
+ - Paweł Pawlikowski: Stworzenie unikalnejmechaniki dla mini-gry.
 
-Etap 3: System punktowy
+## Etap 3: System punktowy
 
-Każdy do swojej gry implementuje system punktowy, który potem będzie mógł być przekazywany na wyniki na ścianie. Zapis lokalny.
+ - Paweł robi system zbierania punktów
+ - Jerzy robi by punkty zebrane pokazały sięna tablicy
+ - Igor robi kasjera
 
-Etap 4: Polishing
+## Etap 4: Polishing
 
-Jerzy: Finalna wersja szaty graficznej.
-Igor: Dokończenie HUD/Finalizacja kasjera/dodanie upgradów
-Paweł: Dokończenie HUD/Finalizacja kasjera/dodanie upgradów
+ - Jerzy: Finalna wersja szaty graficznej.
+ - Igor: Upgrade'y u kasjera
+ - Paweł: Dokończenie HUD
 
 
 
-7. Kryteria sukcesu
-Stabilna rozgrywka z odpowiednim poziomem trudności.
-Różnorodne mini-gry, które angażują graczy.
-Działający system punktacji i rankingów.
+## 7. Kryteria sukcesu
+ - Stabilna rozgrywka z odpowiednim poziomem trudności.
+ - Różnorodne mini-gry, które angażują graczy.
+ - Działający system punktacji i rankingów.
