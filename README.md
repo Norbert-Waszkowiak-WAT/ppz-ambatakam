@@ -52,12 +52,12 @@ GDScript – język skryptowy dla Godot.
 
  - Paweł robi system zbierania punktów
  - Jerzy robi by punkty zebrane pokazały sięna tablicy
- - Igor robi kasjera
+ - Igor robi kasjera i u niego upgrade'y
 
 ## Etap 4: Polishing
 
- - Jerzy: Finalna wersja szaty graficznej.
- - Igor: Upgrade'y u kasjera
+ - Jerzy: Finalna wersja szaty graficznej
+ - Igor: Ścieszka dźwiękowa
  - Paweł: Dokończenie HUD
 
 
