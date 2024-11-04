@@ -4,19 +4,19 @@
 *-nazwy do ustalenia
 
 Arcade 69
-## 1. Tytuł projektu
+# 1. Tytuł projektu
 "Arcade 69"
 Gra wrzuca cię do okolicznego salonu gier. Celem jest zdobycie jak największej ilości punktów grając w dostępne gry w stylu retro.
 
-## 2. Skład zespołu
+# 2. Skład zespołu
  - Jerzy Szymczuk
  - Igor Olejniczak
  - Paweł Pawlikowski
 
-## 3. Cel projektu
+# 3. Cel projektu
 Celem jest stworzenie gry komputerowej, w której gracz porusza się po salonie gier, korzysta z różnych automatów do gier i zdobywa punkty. Gra ma być prosta w mechanice, ale wciągająca z zabawną oprawą wizualną.
 
-## 4. Główne funkcje
+# 4. Główne funkcje
 Trzy automaty gier:
 Gracz może wybierać między różnymi automatami:
 Kasjer sprzedający upgrade'y:
@@ -36,13 +36,13 @@ Dodatkowe zadania do wykonania, które pozwalają na zdobycie bonusowych punktó
 Godot Engine – silnik gry.
 GDScript – język skryptowy dla Godot.
 
-## 6. Harmonogram prac
-# Etap 1: Mechanika podstawowa
+# 6. Harmonogram prac
+## Etap 1: Mechanika podstawowa
 
  - Jerzy Szymczuk: Implementacja poruszania się postaci po salonie oraz sam budynek.
  - Igor Olejniczak: Implementacja automatów
  - Paweł Pawlikowski: Pomoc przy tworzeniu interfejsu użytkownika (menu i HUD)
-# Etap 2: Mini-gry
+## Etap 2: Mini-gry
 
  - Jerzy Szymczuk: Stworzenie mechaniki dla mini-gry wyścigowej,
  - Igor Olejniczak: Stworzenie mechaniki dla mini-gry Saper,
@@ -62,7 +62,7 @@ GDScript – język skryptowy dla Godot.
 
 
 
-## 7. Kryteria sukcesu
+# 7. Kryteria sukcesu
  - Stabilna rozgrywka z odpowiednim poziomem trudności.
  - Różnorodne mini-gry, które angażują graczy.
  - Działający system punktacji i rankingów.
