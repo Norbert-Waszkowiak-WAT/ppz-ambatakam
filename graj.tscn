@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://hfy8gp0s2o1s"]
+
+[ext_resource type="Texture2D" uid="uid://bdrdm17ei52af" path="res://assety/grajerzyassety/empty-asphalt-road-with-two-sidewalks-in-isolated-on-transparent-background-png.webp" id="1_vs2pt"]
+[ext_resource type="Texture2D" uid="uid://ban5707wpoxyh" path="res://assety/grajerzyassety/auto1.png" id="2_tlyts"]
+[ext_resource type="Script" path="res://auto_1.gd" id="3_ft166"]
+
+[node name="graJerzy" type="Node2D"]
+
+[node name="Empty-asphalt-road-with-two-sidewalks-in-isolated-on-transparent-background-png" type="Sprite2D" parent="."]
+position = Vector2(705, 267)
+texture = ExtResource("1_vs2pt")
+
+[node name="Auto1" type="Sprite2D" parent="."]
+position = Vector2(175, 521)
+texture = ExtResource("2_tlyts")
+script = ExtResource("3_ft166")
