@@ -35,6 +35,6 @@ offset_top = 295.0
 offset_right = 655.0
 offset_bottom = 427.0
 action_mode = 0
-text = "Czarnuch"
+text = "Enter"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
