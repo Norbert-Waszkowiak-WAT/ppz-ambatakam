@@ -1,26 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://hfy8gp0s2o1s"]
 
-[ext_resource type="Texture2D" uid="uid://bdrdm17ei52af" path="res://assety/grajerzyassety/empty-asphalt-road-with-two-sidewalks-in-isolated-on-transparent-background-png.webp" id="1_vs2pt"]
+[ext_resource type="Texture2D" uid="uid://jyd3i0gypb42" path="res://assety/grajerzyassety/tlograj.png" id="1_ycqek"]
 [ext_resource type="Script" path="res://automain.gd" id="2_tdbul"]
-[ext_resource type="Texture2D" uid="uid://ban5707wpoxyh" path="res://assety/grajerzyassety/auto1.png" id="2_tlyts"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_62p8g"]
-size = Vector2(1154, 376)
+[ext_resource type="Texture2D" uid="uid://mvysfie4ir3i" path="res://assety/grajerzyassety/auto1.png" id="2_tlyts"]
+[ext_resource type="Script" path="res://tloracer.gd" id="4_hxuh2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n22u6"]
 size = Vector2(271, 120.5)
 
 [node name="graJerzy" type="Node2D"]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(581, 265)
-texture = ExtResource("1_vs2pt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(578, 456)
-shape = SubResource("RectangleShape2D_62p8g")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("2_tdbul")
@@ -30,5 +18,19 @@ position = Vector2(176, 502)
 texture = ExtResource("2_tlyts")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(189.5, 503.75)
+position = Vector2(187, 497)
 shape = SubResource("RectangleShape2D_n22u6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(576, 324)
+scale = Vector2(2.3655, 2.44528)
+texture = ExtResource("1_ycqek")
+script = ExtResource("4_hxuh2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1824, 324)
+scale = Vector2(2.75975, 2.44528)
+texture = ExtResource("1_ycqek")
+script = ExtResource("4_hxuh2")

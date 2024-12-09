@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://erh2vlyuqph6"
-path="res://.godot/imported/auto3.png-07cd16f5fe073071920493f5bcb686dd.ctex"
+uid="uid://jyd3i0gypb42"
+path="res://.godot/imported/tlograj.png-6935c0f73c4090fae69129c8de9e661e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assety/grajerzyassety/auto3.png"
-dest_files=["res://.godot/imported/auto3.png-07cd16f5fe073071920493f5bcb686dd.ctex"]
+source_file="res://assety/grajerzyassety/tlograj.png"
+dest_files=["res://.godot/imported/tlograj.png-6935c0f73c4090fae69129c8de9e661e.ctex"]
 
 [params]
 
