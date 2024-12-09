@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dvryoohxpn4l2"]
+
+[node name="grai" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="GridContainer" type="GridContainer" parent="Node2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 15
+
+[node name="StatusLabel" type="Label" parent="Node2D"]
+offset_left = -17.0
+offset_top = -10.0
+offset_right = 23.0
+offset_bottom = 13.0
+theme_override_colors/font_color = Color(0.211833, 0.204191, 0.656582, 1)
+theme_override_font_sizes/font_size = 5
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="restart" type="Button" parent="Node2D"]
+offset_right = 8.0
+offset_bottom = 8.0

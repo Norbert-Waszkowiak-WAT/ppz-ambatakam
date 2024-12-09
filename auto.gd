@@ -21,7 +21,7 @@ func load_minigame():
 		"Automat1":
 			get_tree().change_scene("res://graj.tscn")  # Change scene to graj.tscn
 		"Automat2":
-			get_tree().change_scene_to_file("res://Minigame2.tscn")
+			get_tree().change_scene_to_file("res://grai.tscn")
 		"Automat3":
 			get_tree().change_scene_to_file("res://Minigame3.tscn")
 
