@@ -10,6 +10,6 @@ func _input(event):
 func load_scene():
 	var scene = load("res://graj.tscn")  # Load the scene
 	if scene:
-		get_tree().change_scene_to(scene)  # Switch to the new scene
+		get_tree().change_scene_to_file("res://graj.tscn")  # Switch to the new scene
 	else:
 		print("Failed to load scene 'graj.tscn'")
