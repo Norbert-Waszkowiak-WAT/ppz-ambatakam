@@ -30,7 +30,14 @@ script = ExtResource("4_hxuh2")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(1824, 324)
+position = Vector2(1688, 324)
+scale = Vector2(2.75975, 2.44528)
+texture = ExtResource("1_ycqek")
+script = ExtResource("4_hxuh2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(-544, 324)
 scale = Vector2(2.75975, 2.44528)
 texture = ExtResource("1_ycqek")
 script = ExtResource("4_hxuh2")

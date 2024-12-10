@@ -1,4 +1,4 @@
-extends Area2D
+extends Node2D  # Assuming this is attached to a Node2D or any other node in your scene
 
 # This function is called when any input event is received.
 func _input(event):
@@ -6,10 +6,10 @@ func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		load_scene()
 
-# Function to load the 'graj.tscn' scene
+# Function to load the 'racer.tscn' scene
 func load_scene():
-	var scene = load("res://grai.tscn")  # Load the scene
-	if scene:
-		get_tree().change_scene_to_file("res://grai.tscn")  # Switch to the new scene
+	var scene_path = "res://racer.tscn"  # Path to the scene
+	if ResourceLoader.exists(scene_path):  # Check if the scene exists before loading
+		get_tree().change_scene_to_file("res://racer.tscn")  # Switch to the new scene
 	else:
-		print("Failed to load scene 'grai.tscn'")
+		print("Failed to load scene 'racer.tscn'. Scene does not exist.")

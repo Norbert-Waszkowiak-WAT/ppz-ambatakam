@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 window/size/mode=3
 window/stretch/mode="viewport"
 
+[global_group]
+
+player="tylko player1"
+
 [input]
 
 ui_accept={

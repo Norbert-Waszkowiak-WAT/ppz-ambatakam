@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://tf5r2jdvu4o0"]
+[gd_scene load_steps=15 format=3 uid="uid://tf5r2jdvu4o0"]
 
 [ext_resource type="Texture2D" uid="uid://cv2qdbj75wd3c" path="res://assety/tlo.png" id="1_01eid"]
 [ext_resource type="Script" path="res://auto.gd" id="1_erjng"]
@@ -6,7 +6,6 @@
 [ext_resource type="Script" path="res://character_body_2d.gd" id="3_qvmjy"]
 [ext_resource type="Texture2D" uid="uid://dw52uk10ioqc3" path="res://assety/chopperwalk.png" id="4_7cwfd"]
 [ext_resource type="Texture2D" uid="uid://bfyyu8nvcfmme" path="res://assety/automat.png" id="5_kom8i"]
-[ext_resource type="Script" path="res://graJerzy.gd" id="6_rff7g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e317s"]
 size = Vector2(1166, 13.5)
@@ -143,7 +142,6 @@ shape = SubResource("RectangleShape2D_1igwr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(754, 501)
 shape = SubResource("RectangleShape2D_so6ai")
-script = ExtResource("6_rff7g")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 position = Vector2(756, 432)

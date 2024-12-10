@@ -139,11 +139,11 @@ position = Vector2(587.438, 555.75)
 shape = SubResource("RectangleShape2D_1igwr")
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("6_rff7g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(754, 501)
 shape = SubResource("RectangleShape2D_so6ai")
-script = ExtResource("6_rff7g")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 position = Vector2(756, 432)
