@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqddx7axn0nto"]
+
+[ext_resource type="Texture2D" uid="uid://blb6ij3n7nqwx" path="res://assety/grajerzyassety/auta/auto2.png" id="1_l8vm7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y023d"]
+size = Vector2(102, 71)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(126.014, 88.0336)
+rotation = 3.14035
+scale = Vector2(0.594837, 0.590909)
+texture = ExtResource("1_l8vm7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(126, 88.5)
+shape = SubResource("RectangleShape2D_y023d")

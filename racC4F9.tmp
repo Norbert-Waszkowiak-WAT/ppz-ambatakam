@@ -1,11 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://d2qdw2ta60835"]
+[gd_scene load_steps=9 format=3 uid="uid://d2qdw2ta60835"]
 
 [ext_resource type="Script" path="res://autoruch.gd" id="1_cv6pq"]
-[ext_resource type="Script" path="res://racer.gd" id="1_kw1bw"]
 [ext_resource type="Texture2D" uid="uid://mrykuoom76wn" path="res://assety/grajerzyassety/auta/auto1.png" id="2_m6c5x"]
 [ext_resource type="Texture2D" uid="uid://jyd3i0gypb42" path="res://assety/grajerzyassety/tlograj.png" id="3_tj4vo"]
 [ext_resource type="Script" path="res://tloracer.gd" id="4_0uqva"]
-[ext_resource type="PackedScene" uid="uid://b20jxpqrf2n85" path="res://HUDracer.tscn" id="6_0no1a"]
+[ext_resource type="Script" path="res://punktyracer.gd" id="5_6gwkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yudr7"]
+size = Vector2(94, 72)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j47kv"]
 size = Vector2(10, 654)
@@ -13,11 +15,7 @@ size = Vector2(10, 654)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmwe8"]
 size = Vector2(1172, 15.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mjyr"]
-size = Vector2(96, 70)
-
 [node name="graJerzy" type="Node2D"]
-script = ExtResource("1_kw1bw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 show_behind_parent = true
@@ -47,6 +45,20 @@ texture = ExtResource("3_tj4vo")
 script = ExtResource("4_0uqva")
 metadata/_edit_lock_ = true
 
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_cv6pq")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+top_level = true
+position = Vector2(104, 395)
+scale = Vector2(0.559172, 0.566116)
+texture = ExtResource("2_m6c5x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+show_behind_parent = true
+position = Vector2(104, 395)
+shape = SubResource("RectangleShape2D_yudr7")
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
@@ -65,16 +77,11 @@ shape = SubResource("RectangleShape2D_lmwe8")
 position = Vector2(576, 644.25)
 shape = SubResource("RectangleShape2D_lmwe8")
 
-[node name="auto" type="CharacterBody2D" parent="."]
-script = ExtResource("1_cv6pq")
+[node name="punkty" type="Node2D" parent="."]
+script = ExtResource("5_6gwkg")
 
-[node name="Sprite2D" type="Sprite2D" parent="auto"]
-position = Vector2(101.875, 250.625)
-scale = Vector2(0.569527, 0.572314)
-texture = ExtResource("2_m6c5x")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="auto"]
-position = Vector2(102, 251)
-shape = SubResource("RectangleShape2D_8mjyr")
-
-[node name="HUDracer" parent="." instance=ExtResource("6_0no1a")]
+[node name="punktylabel" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 32.0
+offset_right = 115.0
+offset_bottom = 78.0

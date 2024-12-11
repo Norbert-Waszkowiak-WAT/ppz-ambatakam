@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://b20jxpqrf2n85"]
+
+[ext_resource type="FontFile" uid="uid://c013j3ycweirj" path="res://assety/grajerzyassety/Retro Gaming.ttf" id="1_3b1uw"]
+
+[node name="HUDracer" type="CanvasLayer"]
+
+[node name="wyniklabel" type="Label" parent="."]
+offset_right = 167.0
+offset_bottom = 51.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_3b1uw")
+theme_override_font_sizes/font_size = 40
+text = "SCORE:"
+
+[node name="startracerlabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -357.5
+offset_top = -27.5
+offset_right = 357.5
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_3b1uw")
+theme_override_font_sizes/font_size = 40
+text = "NACIŚNIJ SPACJĘ ABY ZACZĄĆ"
+
+[node name="najwyniklabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -302.0
+offset_bottom = 51.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_3b1uw")
+theme_override_font_sizes/font_size = 40
+text = "HIGH SCORE:"
