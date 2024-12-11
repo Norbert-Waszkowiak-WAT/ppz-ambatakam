@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqy8t1mq8xfyr"]
+
+[ext_resource type="Texture2D" uid="uid://cecri3tha8bdn" path="res://assety/grajerzyassety/auta/auto5.png" id="1_gsjg4"]
+[ext_resource type="Script" path="res://enemycarmovement.gd" id="2_s8jn1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urvr6"]
+size = Vector2(96, 72)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("2_s8jn1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(48, 36)
+scale = Vector2(0.568047, 0.595041)
+texture = ExtResource("1_gsjg4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(48, 36)
+shape = SubResource("RectangleShape2D_urvr6")

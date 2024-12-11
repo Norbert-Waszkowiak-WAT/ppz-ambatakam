@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyu81lgurnxbs"]
+
+[ext_resource type="FontFile" uid="uid://c013j3ycweirj" path="res://assety/grajerzyassety/Retro Gaming.ttf" id="1_hpa4b"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="RestartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -132.0
+offset_top = -40.0
+offset_right = 132.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_hpa4b")
+theme_override_font_sizes/font_size = 40
+text = "RESTART"
