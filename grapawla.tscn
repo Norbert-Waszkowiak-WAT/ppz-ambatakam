@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://bt11ibb6wujdx"]
+
+[ext_resource type="Texture2D" uid="uid://b5wd7y41rbx3h" path="res://assety/game backg.jpg" id="1_u3wx5"]
+[ext_resource type="Texture2D" uid="uid://dmwgvu8cj32v4" path="res://assety/podloga.jpg" id="2_c3qcq"]
+[ext_resource type="Script" path="res://zły1.gd" id="2_n4i34"]
+[ext_resource type="Texture2D" uid="uid://coo3jmvc88hgb" path="res://assety/grajerzyassety/auta/zły.png" id="3_7hrbl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fx1qb"]
+size = Vector2(1150, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vyt4"]
+size = Vector2(107, 102)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 650.0
+texture = ExtResource("1_u3wx5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(577, 589.5)
+scale = Vector2(1.97931, 3.10811)
+texture = ExtResource("2_c3qcq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(578, 636.5)
+shape = SubResource("RectangleShape2D_fx1qb")
+debug_color = Color(0.97077, 0, 0.452488, 0.42)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_n4i34")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(546, 558)
+scale = Vector2(0.45757, 0.468637)
+texture = ExtResource("3_7hrbl")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(546, 560)
+shape = SubResource("RectangleShape2D_8vyt4")
