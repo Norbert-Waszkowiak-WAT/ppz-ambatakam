@@ -1,7 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://tf5r2jdvu4o0"]
+[gd_scene load_steps=15 format=3 uid="uid://tf5r2jdvu4o0"]
 
 [ext_resource type="Texture2D" uid="uid://cv2qdbj75wd3c" path="res://assety/tlo.png" id="1_01eid"]
-[ext_resource type="Script" path="res://auto.gd" id="1_erjng"]
 [ext_resource type="Texture2D" uid="uid://bkb7tkw2ggimh" path="res://assety/podlga.png" id="2_kkisq"]
 [ext_resource type="Script" path="res://character_body_2d.gd" id="3_qvmjy"]
 [ext_resource type="Texture2D" uid="uid://dw52uk10ioqc3" path="res://assety/chopperwalk.png" id="4_7cwfd"]
@@ -89,7 +88,6 @@ size = Vector2(121.125, 35.5)
 size = Vector2(89, 77)
 
 [node name="Scena" type="Node2D"]
-script = ExtResource("1_erjng")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1164.0
