@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://blb6ij3n7nqwx" path="res://assety/grajerzyassety/auta/auto2.png" id="1_l8vm7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y023d"]
-size = Vector2(96, 72)
+size = Vector2(104, 72)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_e7hyt")
@@ -16,5 +16,7 @@ scale = Vector2(0.562975, 0.597476)
 texture = ExtResource("1_l8vm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(48, 36)
+position = Vector2(44, 36)
 shape = SubResource("RectangleShape2D_y023d")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

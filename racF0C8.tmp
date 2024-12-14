@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://d2qdw2ta60835"]
+[gd_scene load_steps=11 format=3 uid="uid://d2qdw2ta60835"]
 
 [ext_resource type="Script" path="res://autoruch.gd" id="1_cv6pq"]
 [ext_resource type="Script" path="res://racer.gd" id="1_kw1bw"]
@@ -6,16 +6,13 @@
 [ext_resource type="Texture2D" uid="uid://jyd3i0gypb42" path="res://assety/grajerzyassety/tlograj.png" id="3_tj4vo"]
 [ext_resource type="Script" path="res://tloracer.gd" id="4_0uqva"]
 [ext_resource type="PackedScene" uid="uid://b20jxpqrf2n85" path="res://HUDracer.tscn" id="6_0no1a"]
-[ext_resource type="PackedScene" uid="uid://ng0biniyc8lg" path="res://Gameover.tscn" id="7_axmf8"]
+[ext_resource type="PackedScene" uid="uid://ng0biniyc8lg" path="res://gameover.tscn" id="7_axmf8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j47kv"]
 size = Vector2(10, 654)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmwe8"]
 size = Vector2(1172, 15.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dvqu"]
-size = Vector2(16, 657)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mjyr"]
 size = Vector2(98, 70)
@@ -65,10 +62,6 @@ shape = SubResource("RectangleShape2D_lmwe8")
 position = Vector2(576, 644.25)
 shape = SubResource("RectangleShape2D_lmwe8")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1160, 327.5)
-shape = SubResource("RectangleShape2D_3dvqu")
-
 [node name="auto" type="CharacterBody2D" parent="."]
 script = ExtResource("1_cv6pq")
 
@@ -88,6 +81,5 @@ wait_time = 2.5
 autostart = true
 
 [node name="Gameover" parent="." instance=ExtResource("7_axmf8")]
-process_mode = 2
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
