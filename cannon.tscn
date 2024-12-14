@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbd0lvqsre76y"]
+
+[ext_resource type="Texture2D" uid="uid://cg4tbpvvgel1o" path="res://assety/pngwing.com.png" id="1_gwukf"]
+[ext_resource type="Script" path="res://cannon.gd" id="2_44p38"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(729, 602)
+scale = Vector2(0.23125, 0.21875)
+texture = ExtResource("1_gwukf")
+script = ExtResource("2_44p38")
+
+[node name="Timer" type="Timer" parent="Sprite2D"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Sprite2D/Timer" to="Sprite2D" method="_on_timer_timeout"]

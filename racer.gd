@@ -7,11 +7,14 @@ var gra_on: bool = false
 var high_score: int = 0
 var screen: Vector2
 var spawnable_height := [45, 210, 350, 530]
+var motor_height := [140,460]
+@onready var crash = $AudioStreamPlayer2D2
 
 var carred_scene: PackedScene = preload("res://autored.tscn")
 var cargreen_scene: PackedScene = preload("res://autogreen.tscn")
 var carcrimson_scene: PackedScene = preload("res://autocrimson.tscn")
 var carwhite_scene: PackedScene = preload("res://autowhite.tscn")
+var motorenemy: PackedScene = preload("res://motorenemy.tscn")
 var wrogieauta := [carred_scene, cargreen_scene, carcrimson_scene, carwhite_scene]
 var spawned_cars = []
 var zajy = []
@@ -58,12 +61,25 @@ func nowa_gra():
 	
    
 	for car in spawned_cars:
-		car.queue_free()
+		if car:
+			if car != null:
+				car.queue_free()
 	spawned_cars.clear()
 	$HUDracer.get_node("startracerlabel").show()
 	$Gameover/Button.hide()
 	$Gameover/Label.hide()
 	$Gameover/Label2.hide()
+
+func _on_timermotor_timeout() -> void:
+	if gra_on:
+		var motor = motorenemy.instantiate()
+		var motor_y = motor_height[randi() % motor_height.size()]
+		var motor_x = screen.x + 100
+		motor.body_entered.connect(wypadek)
+		add_child(motor)
+		motor.position = Vector2(motor_x, motor_y)
+		motor.speed = 500 + (poziom * 10)
+		spawned_cars.append(motor)
 
 func _on_timer_timeout() -> void:
 	if gra_on:
@@ -79,9 +95,9 @@ func _on_timer_timeout() -> void:
 			car.speed = 300 + (poziom * 10)
 			spawned_cars.append(car)
 			zajy.append(car_y)
+
 func pozycje() -> int:
 	var wolney = spawnable_height.duplicate()
-
 	for zajete in zajy:
 		if zajete in wolney:
 			wolney.erase(zajete)
@@ -92,7 +108,9 @@ func pozycje() -> int:
 		
 func wypadek(body: Node2D) -> void:
 	if body.name == "auto":
+		crash.play()
 		game_over()
+		
 
 func koniec_wynik():
 	$Gameover.get_node("Label").text = "  TWÓJ WYNIK: " + "\n" + str(wynik) + "\n" + "NAJLEPSZY WYNIK: " + "\n" + str(high_score)
