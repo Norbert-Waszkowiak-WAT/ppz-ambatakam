@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckmbo2t56fupx"]
+
+[ext_resource type="Script" path="res://enemycarmovement.gd" id="1_a7ahf"]
+[ext_resource type="Texture2D" uid="uid://rgvy4v3bqr8l" path="res://assety/grajerzyassety/auta/motor.png" id="1_nrauh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ir0f"]
+size = Vector2(80, 32)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_a7ahf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(36, 24)
+scale = Vector2(0.595041, 0.551724)
+texture = ExtResource("1_nrauh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 24)
+shape = SubResource("RectangleShape2D_4ir0f")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

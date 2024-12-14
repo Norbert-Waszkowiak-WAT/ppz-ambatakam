@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://du1o2csgie0rl"
+path="res://.godot/imported/Accident sound effect  sfx bgm  for videosfilms #copyrightfree #creativecommons.mp3-2d70fa8c0213049c2968d59c26b2644f.mp3str"
+
+[deps]
+
+source_file="res://assety/grajerzyassety/Accident sound effect  sfx bgm  for videosfilms #copyrightfree #creativecommons.mp3"
+dest_files=["res://.godot/imported/Accident sound effect  sfx bgm  for videosfilms #copyrightfree #creativecommons.mp3-2d70fa8c0213049c2968d59c26b2644f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
