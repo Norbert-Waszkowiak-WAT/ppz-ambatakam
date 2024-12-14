@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dmwgvu8cj32v4" path="res://assety/podloga.jpg" id="2_c3qcq"]
 [ext_resource type="Script" path="res://zły1.gd" id="2_n4i34"]
 [ext_resource type="Texture2D" uid="uid://coo3jmvc88hgb" path="res://assety/grajerzyassety/auta/zły.png" id="3_7hrbl"]
-[ext_resource type="PackedScene" path="res://cannon.tscn" id="5_utbvt"]
+[ext_resource type="PackedScene" uid="uid://cbd0lvqsre76y" path="res://cannon.tscn" id="5_utbvt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx1qb"]
 size = Vector2(1150, 21)

@@ -1,22 +1,16 @@
 extends Node2D
 
-var bullet_scene = preload("res://bullet.tscn")  # Wczytanie pocisku
-var fire_rate = 2  # Czas pomiędzy strzałami
-var bullet_speed = 500  # Prędkość pocisków
+var bullet_scene = preload("res://bullet.tscn")  # Wczytanie sceny pocisku
+var fire_rate = 2.0  # Czas pomiędzy strzałami (w sekundach)
 
 func _ready():
-	# Konfiguracja Timera
-	$Timer.wait_time = fire_rate  # Ustaw czas pomiędzy strzałami
-	$Timer.start()  # Rozpocznij timer
+	# Konfiguracja Timera dla strzałów
+	$Timer.wait_time = fire_rate  # Ustaw czas między strzałami
+	$Timer.start()  # Uruchom Timer
 
-# Funkcja wywołana przez timer
 func _on_Timer_timeout():
-	# Tworzenie pocisku i dodawanie go do sceny głównej
-	var bullet = bullet_scene.instantiate()  # Utwórz instancję pocisku
-	bullet.position = position  # Ustawienie pozycji pocisku w miejscu armatki
-	bullet.rotation = rotation  # Ustaw obrót pocisku zgodnie z armatką
-	bullet.speed = bullet_speed  # Przekazanie prędkości pocisku
-	get_parent().add_child(bullet)  # Dodanie pocisku do sceny
-
-func _on_timer_timeout() -> void:
-	pass # Replace with function body.
+	# Funkcja wywoływana co zakończenie Timera - strzelanie pociskiem
+	var bullet = bullet_scene.instantiate()  # Stwórz instancję pocisku
+	bullet.position = global_position  # Ustaw początkową pozycję pocisku (miejsce armaty)
+	bullet.rotation = rotation  # Ustaw pocisk zgodnie z obrotem armaty
+	get_parent().add_child(bullet)  # Dodaj pocisk do sceny głównej

@@ -8,15 +8,19 @@ radius = 28.0
 height = 64.0
 
 [node name="Node2D" type="Area2D"]
+script = ExtResource("2_tp1x4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(408.25, 125.5)
+position = Vector2(-94, 98)
 scale = Vector2(0.127083, 0.0930555)
 texture = ExtResource("1_h6x85")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(408, 124)
+position = Vector2(-93, 96)
 shape = SubResource("CapsuleShape2D_6dqge")
-script = ExtResource("2_tp1x4")
 
-[connection signal="ready" from="CollisionShape2D" to="CollisionShape2D" method="_on_ready"]
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

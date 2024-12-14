@@ -4,15 +4,17 @@
 [ext_resource type="Script" path="res://cannon.gd" id="2_44p38"]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(729, 602)
-scale = Vector2(0.23125, 0.21875)
-texture = ExtResource("1_gwukf")
 script = ExtResource("2_44p38")
 
-[node name="Timer" type="Timer" parent="Sprite2D"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-176, 67)
+scale = Vector2(0.23125, 0.21875)
+texture = ExtResource("1_gwukf")
+flip_h = true
+flip_v = true
+
+[node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
 
-[connection signal="timeout" from="Sprite2D/Timer" to="Sprite2D" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
