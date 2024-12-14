@@ -6,8 +6,8 @@ var jump_force = -1200
 var gravity = 3500
 
 # Limity dla pozycji
-var left_limit = -497  # lewa krawędź ekranu
-var right_limit = 543  # prawa krawędź ekranu (przykład, dostosuj do szerokości swojego ekranu)
+var left_limit = -490  # lewa krawędź ekranu
+var right_limit = 550  # prawa krawędź ekranu (przykład, dostosuj do szerokości swojego ekranu)
 
 func _physics_process(delta):
 	# Dodanie grawitacji
