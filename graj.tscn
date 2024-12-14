@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://jyd3i0gypb42" path="res://assety/grajerzyassety/tlograj.png" id="1_ycqek"]
 [ext_resource type="Script" path="res://automain.gd" id="2_tdbul"]
-[ext_resource type="Texture2D" uid="uid://mvysfie4ir3i" path="res://assety/grajerzyassety/auto1.png" id="2_tlyts"]
+[ext_resource type="Texture2D" uid="uid://mrykuoom76wn" path="res://assety/grajerzyassety/auta/auto1.png" id="2_tlyts"]
 [ext_resource type="Script" path="res://tloracer.gd" id="4_hxuh2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n22u6"]
