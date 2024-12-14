@@ -27,7 +27,7 @@ func _on_game_status_button_pressed():
 	get_tree().reload_current_scene()
 
 func game_lost():
-	game_status_button.texture_normal = game_lost_button_texture
+	game_status_button  = game_lost_button_texture
 	
 func game_won():
-	game_status_button.texture_normal = game_won_button_texture
+	game_status_button = game_won_button_texture

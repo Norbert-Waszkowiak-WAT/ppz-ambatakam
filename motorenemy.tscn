@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://ckmbo2t56fupx"]
+[gd_scene load_steps=4 format=3 uid="uid://bak3h32hw5lx2"]
 
 [ext_resource type="Script" path="res://enemycarmovement.gd" id="1_a7ahf"]
 [ext_resource type="Texture2D" uid="uid://rgvy4v3bqr8l" path="res://assety/grajerzyassety/auta/motor.png" id="1_nrauh"]

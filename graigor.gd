@@ -1,4 +1,4 @@
-extends Node2D  # Lub inny typ węzła nadrzędnego
+extends Node  # Lub inny typ węzła nadrzędnego
 
 func change_scene():
 	var scene_path = "res://grai.tscn"  # Ścieżka do sceny

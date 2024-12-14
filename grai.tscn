@@ -56,6 +56,7 @@ zoom = Vector2(2, 2)
 use_parent_material = true
 tile_set = SubResource("TileSet_3gf5t")
 format = 2
+layer_0/tile_data = PackedInt32Array(5, 196608, 1)
 script = ExtResource("2_olqu4")
 
 [node name="UI" parent="." instance=ExtResource("4_12yta")]
