@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwhdv6js6mo5s"]
+
+[ext_resource type="FontFile" uid="uid://cqv4ykmw0gsdb" path="res://assety/igorassety/DS-DIGIB (1).TTF" id="1_5mm0p"]
+[ext_resource type="Script" path="res://ui.gd" id="1_kxeul"]
+[ext_resource type="Texture2D" uid="uid://b536by5rlh6m7" path="res://assety/igorassety/button_smile.png" id="2_aynai"]
+[ext_resource type="Texture2D" uid="uid://cq7s6f4mjrbjb" path="res://assety/igorassety/button_smile_pressed.png" id="3_1i047"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbyat"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_kxeul")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(0, 90)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MinesCountPanel" type="Panel" parent="PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_fbyat")
+
+[node name="MinesCountLabel" type="Label" parent="PanelContainer/HBoxContainer/MinesCountPanel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 30)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -65.0
+offset_right = -170.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0.960784, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_5mm0p")
+theme_override_font_sizes/font_size = 40
+text = "100
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameStatusButton" type="TextureButton" parent="PanelContainer/HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 4
+texture_normal = ExtResource("2_aynai")
+texture_pressed = ExtResource("3_1i047")
+
+[node name="TimerPanel" type="Panel" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="TimerCountLabel" type="Label" parent="PanelContainer/HBoxContainer/TimerPanel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.5
+offset_left = 76.0
+offset_top = -28.0
+offset_right = 227.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0.960784, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_5mm0p")
+theme_override_font_sizes/font_size = 77
+text = "000"
+horizontal_alignment = 1
+vertical_alignment = 1
