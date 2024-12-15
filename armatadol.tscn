@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bugvys1dimypc"]
+
+[ext_resource type="Texture2D" uid="uid://cdqobwer3nldq" path="res://assety/pawelassety/armatka.png" id="1_b130x"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Armatka" type="Sprite2D" parent="."]
+position = Vector2(550, 79)
+rotation = -1.9349
+scale = Vector2(0.37919, 0.415521)
+texture = ExtResource("1_b130x")

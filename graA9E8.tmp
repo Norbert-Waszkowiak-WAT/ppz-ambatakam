@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://dvryoohxpn4l2"]
+
+[ext_resource type="Texture2D" uid="uid://dajth0do3mxnc" path="res://assety/igorassety/minesweeper_atlas.png" id="1_bgf5q"]
+[ext_resource type="Script" path="res://mines_grid.gd" id="2_olqu4"]
+[ext_resource type="PackedScene" uid="uid://jiowlothadst" path="res://game_state_manager.tscn" id="2_xyepv"]
+[ext_resource type="PackedScene" uid="uid://cwhdv6js6mo5s" path="res://ui.tscn" id="4_12yta"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h4y30"]
+texture = ExtResource("1_bgf5q")
+margins = Vector2i(4, 4)
+separation = Vector2i(8, 8)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/next_alternative_id = 2
+2:2/0 = 0
+2:2/1 = 1
+2:2/1/custom_data_0 = true
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_3gf5t"]
+custom_data_layer_0/name = "has_mine"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_h4y30")
+
+[node name="grai" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Layer0" type="TileMap" parent="."]
+use_parent_material = true
+tile_set = SubResource("TileSet_3gf5t")
+format = 2
+script = ExtResource("2_olqu4")
+
+[node name="UI" parent="." instance=ExtResource("4_12yta")]
+
+[node name="GameStateManager" parent="." node_paths=PackedStringArray("mines_grid", "ui") instance=ExtResource("2_xyepv")]
+mines_grid = NodePath("../Layer0")
+ui = NodePath("../UI")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://tf5r2jdvu4o0"]
+[gd_scene load_steps=16 format=3 uid="uid://tf5r2jdvu4o0"]
 
 [ext_resource type="Texture2D" uid="uid://cv2qdbj75wd3c" path="res://assety/tlo.png" id="1_01eid"]
 [ext_resource type="Texture2D" uid="uid://bkb7tkw2ggimh" path="res://assety/podlga.png" id="2_kkisq"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dw52uk10ioqc3" path="res://assety/chopperwalk.png" id="4_7cwfd"]
 [ext_resource type="Texture2D" uid="uid://bfyyu8nvcfmme" path="res://assety/automat.png" id="5_kom8i"]
 [ext_resource type="Script" path="res://graJerzy.gd" id="6_rff7g"]
+[ext_resource type="FontFile" uid="uid://c013j3ycweirj" path="res://assety/grajerzyassety/Retro Gaming.ttf" id="7_pfli7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e317s"]
 size = Vector2(1166, 13.5)
@@ -147,3 +148,14 @@ script = ExtResource("6_rff7g")
 position = Vector2(756, 432)
 scale = Vector2(0.0708334, 0.0856842)
 texture = ExtResource("5_kom8i")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 25.0
+offset_top = 24.0
+offset_right = 1235.0
+offset_bottom = 195.0
+theme_override_fonts/font = ExtResource("7_pfli7")
+theme_override_font_sizes/font_size = 40
+text = "NACIŚNIJ E ŻEBY WŁĄCZYĆ GRE RACER
+NACIŚNIJ G ŻEBY WŁĄCZYĆ SAPERA
+NACIŚNIJ H ŻEBY WŁĄCZYĆ GOSLING DODGER"

@@ -8,6 +8,5 @@ func change_scene():
 		print("Scena nie istnieje:", "res://grai.tscn")
 
 func _input(event):
-	# Sprawdź, czy akcja "change_scene" została aktywowana
-	if event.is_action_pressed("grai"):
+	if event.is_action_pressed("igor"):
 		change_scene()

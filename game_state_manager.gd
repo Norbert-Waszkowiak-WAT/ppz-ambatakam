@@ -28,4 +28,3 @@ func on_game_lost():
 func on_game_won():
 	timer.stop()
 	ui.game_won()
-	
