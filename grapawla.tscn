@@ -44,4 +44,5 @@ position = Vector2(546, 560)
 shape = SubResource("RectangleShape2D_8vyt4")
 
 [node name="Node2D" parent="." instance=ExtResource("5_utbvt")]
-position = Vector2(265, -19)
+position = Vector2(557, 312)
+rotation = -6.28319
