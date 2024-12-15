@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bt11ibb6wujdx"]
+[gd_scene load_steps=9 format=3 uid="uid://bt11ibb6wujdx"]
 
+[ext_resource type="Script" path="res://wyjscie.gd" id="1_5pssg"]
 [ext_resource type="Texture2D" uid="uid://b5wd7y41rbx3h" path="res://assety/game backg.jpg" id="1_u3wx5"]
 [ext_resource type="Texture2D" uid="uid://dmwgvu8cj32v4" path="res://assety/podloga.jpg" id="2_c3qcq"]
 [ext_resource type="Script" path="res://zły1.gd" id="2_n4i34"]
@@ -13,6 +14,7 @@ size = Vector2(1150, 21)
 size = Vector2(107, 102)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_5pssg")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1151.0

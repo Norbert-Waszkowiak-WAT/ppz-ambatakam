@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dvryoohxpn4l2"]
+[gd_scene load_steps=8 format=3 uid="uid://dvryoohxpn4l2"]
 
 [ext_resource type="Texture2D" uid="uid://dajth0do3mxnc" path="res://assety/igorassety/minesweeper_atlas.png" id="1_bgf5q"]
+[ext_resource type="Script" path="res://wyjscie.gd" id="1_i6tyi"]
 [ext_resource type="Script" path="res://mines_grid.gd" id="2_olqu4"]
 [ext_resource type="PackedScene" uid="uid://jiowlothadst" path="res://game_state_manager.tscn" id="2_xyepv"]
 [ext_resource type="PackedScene" uid="uid://cwhdv6js6mo5s" path="res://ui.tscn" id="4_12yta"]
@@ -48,6 +49,7 @@ custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_h4y30")
 
 [node name="grai" type="Node"]
+script = ExtResource("1_i6tyi")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
