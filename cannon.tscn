@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbd0lvqsre76y"]
+[gd_scene load_steps=3 format=3 uid="uid://cbd0lvqsre76y"]
 
 [ext_resource type="Texture2D" uid="uid://cdqobwer3nldq" path="res://assety/pawelassety/armatka.png" id="2_17ipo"]
 [ext_resource type="Script" path="res://cannon.gd" id="2_44p38"]
-[ext_resource type="PackedScene" uid="uid://cxql3ljsh022m" path="res://bullet.tscn" id="3_iedw6"]
 
 [node name="Scena główna" type="Node2D"]
 position = Vector2(562, 310)
@@ -18,10 +17,10 @@ offset = Vector2(100, 0)
 flip_h = true
 flip_v = true
 
-[node name="Timer" type="Timer" parent="Node2D"]
+[node name="Timer1" type="Timer" parent="Node2D"]
 autostart = true
 
-[node name="Muzzle" type="Node2D" parent="Node2D"]
+[node name="Muzzle1" type="Node2D" parent="Node2D"]
 position = Vector2(-400, -240)
 
 [node name="Node2D2" type="Node2D" parent="."]
@@ -33,12 +32,12 @@ scale = Vector2(0.234375, 0.225625)
 texture = ExtResource("2_17ipo")
 flip_v = true
 
-[node name="Timer" type="Timer" parent="Node2D2"]
+[node name="Timer2" type="Timer" parent="Node2D2"]
+wait_time = 3.0
+autostart = true
 
-[node name="Muzzle" type="Node2D" parent="Node2D2"]
+[node name="Muzzle2" type="Node2D" parent="Node2D2"]
 position = Vector2(426, -228)
 
-[node name="Node2D3" parent="." instance=ExtResource("3_iedw6")]
-
-[connection signal="timeout" from="Node2D/Timer" to="." method="_on_Timer_timeout"]
-[connection signal="timeout" from="Node2D2/Timer" to="Node2D" method="_on_Timer_timeout"]
+[connection signal="timeout" from="Node2D/Timer1" to="Node2D" method="_on_Timer_timeout"]
+[connection signal="timeout" from="Node2D2/Timer2" to="Node2D2" method="_on_Timer_timeout"]

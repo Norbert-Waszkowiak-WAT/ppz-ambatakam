@@ -11,7 +11,7 @@
 size = Vector2(1150, 21)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8vyt4"]
-size = Vector2(107, 102)
+size = Vector2(90.75, 87)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_5pssg")
@@ -37,12 +37,12 @@ debug_color = Color(0.97077, 0, 0.452488, 0.42)
 script = ExtResource("2_n4i34")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(546, 558)
-scale = Vector2(0.45757, 0.468637)
+position = Vector2(537.503, 551.194)
+scale = Vector2(0.385565, 0.405615)
 texture = ExtResource("3_7hrbl")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(546, 560)
+position = Vector2(538.375, 551.5)
 shape = SubResource("RectangleShape2D_8vyt4")
 
 [node name="Node2D" parent="." instance=ExtResource("5_utbvt")]

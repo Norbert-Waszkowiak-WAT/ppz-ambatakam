@@ -5,21 +5,31 @@ var bullet_speed = 500  # Prędkość pocisku
 
 func _ready():
 	if $Timer != null:
-		$Timer.wait_time = 2.0  # Strzał co 2 sekundy
 		$Timer.start()
 		$Timer.timeout.connect(_on_Timer_timeout)
 	else:
 		print("Błąd: Timer nie istnieje!")
 
 func _on_Timer_timeout():
-	# Tworzenie pocisku
-	var bullet = bullet_scene.instantiate()
-	# Dodanie pocisku do głównej sceny
-	get_parent().add_child(bullet)
-	# Ustaw pozycję pocisku na pozycję Muzzle (Node2D)
-	bullet.global_position = $Muzzle.global_position
-	
-	# Ustaw rotację pocisku na rotację armaty
-	bullet.rotation = $Muzzle.global_rotation
-	
-	print("Pocisk wystrzelony z pozycji: ", bullet.global_position)
+	_fire_bullet($Muzzle1)
+	_fire_bullet($Muzzle2)
+
+func _fire_bullet(muzzle):
+	if muzzle != null:
+		# Tworzenie pocisku
+		var bullet = bullet_scene.instantiate()
+		get_parent().add_child(bullet)
+		
+		# Ustawianie pozycji pocisku na Muzzle
+		bullet.global_position = muzzle.global_position
+		
+		# Obliczanie kierunku do obniżonego środka ekranu
+		var center_screen = get_viewport_rect().size / 2
+		center_screen.y += 200  # Obniżenie celu o 200 pikseli
+		var direction = (center_screen - bullet.global_position).normalized()
+		
+		# Ustawienie kierunku pocisku
+		bullet.set_direction(direction)
+		
+		# Ustawianie rotacji pocisku w kierunku celu
+		bullet.rotation = direction.angle()
