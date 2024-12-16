@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Zmienne
-var speed = 450
+var speed = 500
 var jump_force = -1100
 var gravity = 3500
 

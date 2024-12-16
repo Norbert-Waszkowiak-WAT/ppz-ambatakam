@@ -11,12 +11,10 @@ height = 64.0
 script = ExtResource("2_tp1x4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(207, 149)
 scale = Vector2(0.127083, 0.0930555)
 texture = ExtResource("1_h6x85")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(208, 147)
 shape = SubResource("CapsuleShape2D_6dqge")
 
 [node name="Timer" type="Timer" parent="."]

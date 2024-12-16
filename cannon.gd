@@ -2,24 +2,24 @@ extends Node2D
 
 var bullet_scene = preload("res://bullet.tscn")  # Załaduj scenę pocisku
 var bullet_speed = 500  # Prędkość pocisku
-var muzzlex = 160
-var muzzley = -64
 
 func _ready():
-	# Sprawdź, czy węzeł Timer istnieje i ustaw go na strzały co 2 sekundy
 	if $Timer != null:
-		$Timer.wait_time = 2.0  # Czas pomiędzy strzałami
-		$Timer.start()  # Rozpocznij timer
-		$Timer.timeout.connect(_on_Timer_timeout)  # Połącz sygnał timeout z funkcją
+		$Timer.wait_time = 2.0  # Strzał co 2 sekundy
+		$Timer.start()
+		$Timer.timeout.connect(_on_Timer_timeout)
 	else:
 		print("Błąd: Timer nie istnieje!")
 
 func _on_Timer_timeout():
-	# Utwórz pocisk
-	var bullet = bullet_scene.instantiate()  # Utwórz nową instancję pocisku
-	add_child(bullet)  # Dodaj pocisk do głównej sceny
-	bullet.position = Vector2(muzzlex, muzzley)  # Ustaw pozycję pocisku na pozycję węzła Muzzle
-	bullet.rotation = rotation  # Ustaw rotację pocisku na rotację armaty
-	bullet.speed = bullet_speed  # Ustaw prędkość pocisku
+	# Tworzenie pocisku
+	var bullet = bullet_scene.instantiate()
+	# Dodanie pocisku do głównej sceny
+	get_parent().add_child(bullet)
+	# Ustaw pozycję pocisku na pozycję Muzzle (Node2D)
+	bullet.global_position = $Muzzle.global_position
 	
-	print("Pocisk utworzony w pozycji: ", bullet.position)  # Debugowanie
+	# Ustaw rotację pocisku na rotację armaty
+	bullet.rotation = $Muzzle.global_rotation
+	
+	print("Pocisk wystrzelony z pozycji: ", bullet.global_position)

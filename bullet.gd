@@ -1,15 +1,17 @@
 extends Area2D
 
-var speed = 500  # Prędkość pocisku
-var direction = Vector2.ZERO  # Kierunek pocisku
+var speed = 400  # Prędkość pocisku
+var direction = Vector2.ZERO
 
 func _ready():
-	direction = Vector2(cos(rotation), sin(rotation))  # Ustaw kierunek pocisku na podstawie rotacji
+	# Ustaw kierunek pocisku na podstawie jego rotacji
+	direction = Vector2.RIGHT.rotated(rotation)
 
 func _physics_process(delta):
-	position += direction * speed * delta  # Ruch pocisku w zadanym kierunku
+	# Poruszanie się pocisku
+	position += direction * speed * delta
 
 func _on_body_entered(body):
 	if body.name == "CharacterBody2D":  # Kolizja z graczem
-		print("Gracz trafiony!")  # Komunikat
-		queue_free()  # Usunięcie pocisku
+		print("Gracz trafiony!")
+		queue_free()
