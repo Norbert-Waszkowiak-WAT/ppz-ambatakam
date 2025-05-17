@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c47tbbniywu3u"]
+
+[ext_resource type="Script" path="res://credits.gd" id="1_krjnl"]
+[ext_resource type="AudioStream" uid="uid://bermvq1ufau6p" path="res://assety/Fnaf Nose Honk - Meme Effect Sound.mp3" id="3_la4o7"]
+
+[node name="Button" type="Button"]
+offset_left = 229.0
+offset_top = 64.0
+offset_right = 567.0
+offset_bottom = 198.0
+script = ExtResource("1_krjnl")
+
+[node name="FnafNoseHonk-MemeEffectSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_la4o7")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

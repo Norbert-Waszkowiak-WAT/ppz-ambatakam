@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://tf5r2jdvu4o0"]
+[gd_scene load_steps=17 format=3 uid="uid://tf5r2jdvu4o0"]
 
 [ext_resource type="Texture2D" uid="uid://cv2qdbj75wd3c" path="res://assety/tlo.png" id="1_01eid"]
 [ext_resource type="Texture2D" uid="uid://bkb7tkw2ggimh" path="res://assety/podlga.png" id="2_kkisq"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bfyyu8nvcfmme" path="res://assety/automat.png" id="5_kom8i"]
 [ext_resource type="Script" path="res://graJerzy.gd" id="6_rff7g"]
 [ext_resource type="FontFile" uid="uid://c013j3ycweirj" path="res://assety/grajerzyassety/Retro Gaming.ttf" id="7_pfli7"]
+[ext_resource type="PackedScene" uid="uid://di7ygfhhk88lk" path="res://pause_menu.tscn" id="8_ndug4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e317s"]
 size = Vector2(1166, 13.5)
@@ -159,3 +160,7 @@ theme_override_font_sizes/font_size = 40
 text = "NACIŚNIJ E ŻEBY WŁĄCZYĆ GRE RACER
 NACIŚNIJ G ŻEBY WŁĄCZYĆ SAPERA
 NACIŚNIJ H ŻEBY WŁĄCZYĆ GOSLING DODGER"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("8_ndug4")]

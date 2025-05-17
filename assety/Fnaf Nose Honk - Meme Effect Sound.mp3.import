@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bermvq1ufau6p"
+path="res://.godot/imported/Fnaf Nose Honk - Meme Effect Sound.mp3-be0f12a1b786680d4f883460bece9e3d.mp3str"
+
+[deps]
+
+source_file="res://assety/Fnaf Nose Honk - Meme Effect Sound.mp3"
+dest_files=["res://.godot/imported/Fnaf Nose Honk - Meme Effect Sound.mp3-be0f12a1b786680d4f883460bece9e3d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
